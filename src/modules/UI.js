@@ -16,7 +16,7 @@ export default class UI {
 
   static displayLeader() {
     const leaders = LeaderboardStore.getLeaders();
-    leaders.forEach(leader => {
+    leaders.forEach((leader) => {
       UI.addLeader(leader);
     });
   }
