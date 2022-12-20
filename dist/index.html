@@ -1,1 +1,44 @@
-<head><script defer src="main.js"></script></head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <main class="main-wrapper display-flex">
+      <header>
+        <div id="display-leaders">
+          <h2>Leaderboard</h2>
+          <div class="display-flex">
+            <p class="recent-score">Recent Scores</p>
+            <button class="refresh-btn">Refresh</button>
+          </div>
+          <div id="leaderboard"></div>
+        </div>
+      </header>
+      <div class="form-wrapper">
+        <h2>Add Your Scores</h2>
+
+        <form id="form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder=" Your name"
+            required
+          /><br />
+          <input
+            type="number"
+            id="score"
+            name="score"
+            placeholder="Your Score"
+            required
+          /><br />
+          <input id="addBtn" type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

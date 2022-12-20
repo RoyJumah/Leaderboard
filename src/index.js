@@ -1,13 +1,25 @@
-import _ from "lodash";
-import "./style.css";
+// eslint-disable-next-line no-unused-vars
+import _ from 'lodash';
+import './style.css';
+import Leaderboard from './modules/leaders.js';
+import UI from './modules/UI.js';
+import LeaderboardStore from './modules/leadersData.js';
 
-function component() {
-  const element = document.createElement("div");
+const form = document.getElementById('form');
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-  return element;
-}
+  const name = form.name.value;
+  const score = form.score.value;
 
-document.body.appendChild(component());
+  const leader = new Leaderboard(name, score);
+  UI.addLeader(leader);
+  LeaderboardStore.addLeader(leader);
+
+  form.reset();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  UI.displayLeader();
+});

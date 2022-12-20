@@ -1,56 +1,58 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Description the project.
+# Leaderboard
+> This is a project built with JS and Leaderboard External API Service that displays different scores submitted by different players
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JavaScript
+- Webpack
+- Leaderboard API Service
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://royjumah.github.io/Leaderboard/dist/)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+ - Knowledge in HTML, CSS and Javascript
 
 ### Setup
-
+- Open the terminal in your IDE and run this command
+```JavaScript
+git clone https://github.com/RoyJumah/Leaderboard.git
+```
 ### Install
-
+- To install the webpack files to your local machine you will need to run this commands. The commands should be run in the terminal in the order in which they have been listed ❗❗
+```JavaScript
+npm init -y
+npm install webpack webpack-cli --save-dev
+npm install --save lodash
+npx webpack
+npm run build
+npm start
+```
+##
 ### Usage
-
-### Run tests
-
+ - Anyone can use this project for educational purposes
+ 
 ### Deployment
+- This project has been deployed with Github pages
 
 
+👤 **Roy Jumah**
 
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@RoyJumah](https://github.com/RoyJumah)
+- Twitter: [@_royissues](https://twitter.com/_royissues)
+- LinkedIn: [@roy_jumah](https://www.linkedin.com/in/roy-jumah/)
 
 ## 🤝 Contributing
 
@@ -62,14 +64,19 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+<!-- ACKNOWLEDGEMENTS -->
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-## 📝 License
+- I would to thank Microverse for providing me with the resources that enabled me to complete this project
 
-This project is [MIT](./LICENSE) licensed.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
