@@ -12,9 +12,9 @@
 - Webpack
 - Leaderboard API Service
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://royjumah.github.io/Leaderboard/dist/)
 
 
 ## Getting Started
@@ -53,7 +53,6 @@ npm start
 - GitHub: [@RoyJumah](https://github.com/RoyJumah)
 - Twitter: [@_royissues](https://twitter.com/_royissues)
 - LinkedIn: [@roy_jumah](https://www.linkedin.com/in/roy-jumah/)
-👤 **Author2**
 
 ## 🤝 Contributing
 
