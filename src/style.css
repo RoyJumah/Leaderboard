@@ -54,3 +54,18 @@ h2 {
 #addBtn {
   align-self: flex-end;
 }
+
+.main-header {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.leader-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.leader-score {
+  font-weight: 400;
+  font-size: 1.8rem;
+}

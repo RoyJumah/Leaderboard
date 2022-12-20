@@ -6,8 +6,8 @@ export default class UI {
     const ul = document.createElement('ul');
     ul.classList.add('unordered-list');
     ul.innerHTML = `
-       <p><b>${leader.name}</b> :</p>
-      <p><b>${leader.score}</b></p>
+       <p class ="leader-name">${leader.name} :</p>
+      <p class ="leader-score">${leader.score}</p>
     
       `;
 
@@ -16,7 +16,7 @@ export default class UI {
 
   static displayLeader() {
     const leaders = LeaderboardStore.getLeaders();
-    leaders.forEach((leader) => {
+    leaders.forEach(leader => {
       UI.addLeader(leader);
     });
   }
