@@ -22,11 +22,8 @@ body {
 }
 
 .main-wrapper {
-  width: 80rem;
-  margin: 9.6rem auto;
   border: 1px solid rgba(199, 193, 193, 0.616);
   padding: 2.4rem;
-  box-shadow: 0 2.4rem 4.8rem rgb(0, 0, 0, 0.15);
 }
 
 .border {
