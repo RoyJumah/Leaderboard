@@ -1,4 +1,3 @@
-import LeaderboardStore from './leadersData.js';
 import { getScores } from './leaders.js';
 
 export default class UI {
@@ -17,9 +16,8 @@ export default class UI {
 
   static async displayLeader() {
     const leaders = await getScores();
-    console.log('x', leaders.result);
     // const leaders = LeaderboardStore.getLeaders();
-    leaders.result.forEach(leader => {
+    leaders.result.forEach((leader) => {
       UI.addLeader(leader);
     });
   }
