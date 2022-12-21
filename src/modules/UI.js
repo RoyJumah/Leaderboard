@@ -5,6 +5,7 @@ export default class UI {
     const leaderRank = document.getElementById('leaderboard');
     const ul = document.createElement('ul');
     ul.classList.add('unordered-list');
+
     ul.innerHTML = `
        <p class ="leader-name">${leader.user} :</p>
       <p class ="leader-score">${leader.score}</p>
@@ -16,7 +17,7 @@ export default class UI {
 
   static async displayLeader() {
     const leaders = await getScores();
-    // const leaders = LeaderboardStore.getLeaders();
+
     leaders.result.forEach((leader) => {
       UI.addLeader(leader);
     });
