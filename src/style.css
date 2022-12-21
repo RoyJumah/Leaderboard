@@ -75,14 +75,29 @@ h2 {
   left: 80rem;
   top: 10rem;
   width: 40rem;
+  margin-left: 9.6rem;
 }
 
 .form-position {
   position: fixed;
   right: 107rem;
   top: 13rem;
+  margin-right: 11.2rem;
 }
 
-.buttons {
+.buttons,
+.buttons:link,
+.buttons:visited {
   padding: 0.8rem 1.8rem;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 6px;
+  transition: 0.25s;
+}
+
+.buttons:hover,
+.buttons:focus {
+  box-shadow: inset -3.5em 0 0 0 #555, inset 3.5em 0 0 0 #555;
+  color: #fff;
+  transform: translateY(-0.25em);
 }
