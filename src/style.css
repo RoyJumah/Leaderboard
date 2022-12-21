@@ -18,18 +18,18 @@ body {
 .display-flex {
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 12.4rem;
 }
 
 .main-wrapper {
-  width: 80rem;
-  margin: 9.6rem auto;
-  border: 1px solid rgba(199, 193, 193, 0.616);
   padding: 2.4rem;
-  box-shadow: 0 2.4rem 4.8rem rgb(0, 0, 0, 0.15);
+  margin: 0 auto;
+  width: 90rem;
 }
 
-.border {
+.text-box {
+  width: 20rem;
+  height: 40rem;
   border: 2px solid #333;
 }
 
@@ -68,4 +68,23 @@ h2 {
 .leader-score {
   font-weight: 400;
   font-size: 1.8rem;
+}
+
+.form-wrapper {
+  position: fixed;
+  left: 80rem;
+  top: 10rem;
+  width: 40rem;
+  margin-left: 9.6rem;
+}
+
+.form-position {
+  position: fixed;
+  right: 107rem;
+  top: 13rem;
+  margin-right: 11.2rem;
+}
+
+.buttons {
+  padding: 0.8rem 1.8rem;
 }

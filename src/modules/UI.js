@@ -1,12 +1,13 @@
-import LeaderboardStore from './leadersData.js';
+import { getScores } from './leaders.js';
 
 export default class UI {
   static addLeader(leader) {
     const leaderRank = document.getElementById('leaderboard');
     const ul = document.createElement('ul');
     ul.classList.add('unordered-list');
+
     ul.innerHTML = `
-       <p class ="leader-name">${leader.name} :</p>
+       <p class ="leader-name">${leader.user} :</p>
       <p class ="leader-score">${leader.score}</p>
     
       `;
@@ -14,9 +15,10 @@ export default class UI {
     leaderRank.appendChild(ul);
   }
 
-  static displayLeader() {
-    const leaders = LeaderboardStore.getLeaders();
-    leaders.forEach((leader) => {
+  static async displayLeader() {
+    const leaders = await getScores();
+
+    leaders.result.forEach((leader) => {
       UI.addLeader(leader);
     });
   }
