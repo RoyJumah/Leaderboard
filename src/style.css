@@ -101,3 +101,12 @@ h2 {
   color: #fff;
   transform: translateY(-0.25em);
 }
+
+input {
+  padding: 1.2rem 2rem;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
