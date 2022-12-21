@@ -75,12 +75,14 @@ h2 {
   left: 80rem;
   top: 10rem;
   width: 40rem;
+  margin-left: 9.6rem;
 }
 
 .form-position {
   position: fixed;
   right: 107rem;
   top: 13rem;
+  margin-right: 11.2rem;
 }
 
 .buttons {
