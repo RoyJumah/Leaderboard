@@ -18,7 +18,7 @@ body {
 .display-flex {
   display: flex;
   align-items: center;
-  gap: 12.4rem;
+  gap: 17.4rem;
 }
 
 .main-wrapper {
@@ -28,15 +28,19 @@ body {
 }
 
 .text-box {
-  width: 20rem;
-  height: 40rem;
+  width: 55rem;
+  height: 45rem;
   border: 2px solid #333;
+  margin-top: 2.4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .unordered-list {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 4.8rem;
 }
 
 .recent-score,
@@ -80,7 +84,7 @@ h2 {
 
 .form-position {
   position: fixed;
-  right: 107rem;
+  right: 85rem;
   top: 13rem;
   margin-right: 11.2rem;
 }
