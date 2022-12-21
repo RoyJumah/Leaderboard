@@ -16,4 +16,14 @@ const postScore = async function (newscore) {
   return scoreData;
 };
 
-export { postScore };
+const getScores = async function () {
+  const response = await fetch(
+    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${GAME_ID}/scores/ `
+  );
+
+  const data = await response.json();
+  console.log(data);
+  return data;
+};
+
+export { postScore, getScores };
