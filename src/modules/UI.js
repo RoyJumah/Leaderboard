@@ -7,7 +7,7 @@ export default class UI {
     ul.classList.add('unordered-list');
 
     ul.innerHTML = `
-       <p class ="leader-name">${leader.user} :</p>
+       <p class ="leader-name">${leader.user}  :</p>
       <p class ="leader-score">${leader.score}</p>
     
       `;
