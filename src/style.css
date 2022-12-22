@@ -18,17 +18,18 @@ body {
 .display-flex {
   display: flex;
   align-items: center;
-  gap: 17.4rem;
 }
 
 .main-wrapper {
   padding: 2.4rem;
   margin: 0 auto;
-  width: 90rem;
+  max-width: 40%;
+  display: flex;
+  gap: 4.8rem;
 }
 
 .text-box {
-  width: 55rem;
+  max-width: 55rem;
   height: 45rem;
   border: 2px solid #333;
   margin-top: 2.4rem;
@@ -65,6 +66,10 @@ h2 {
   font-weight: 700;
 }
 
+.refresh-btn {
+  margin-left: 2.4rem;
+}
+
 .leader-name {
   font-size: 1.8rem;
   font-weight: 600;
@@ -73,21 +78,6 @@ h2 {
 .leader-score {
   font-weight: 400;
   font-size: 1.8rem;
-}
-
-.form-wrapper {
-  position: fixed;
-  left: 80rem;
-  top: 10rem;
-  width: 40rem;
-  margin-left: 9.6rem;
-}
-
-.form-position {
-  position: fixed;
-  right: 85rem;
-  top: 13rem;
-  margin-right: 11.2rem;
 }
 
 .buttons,
@@ -115,16 +105,16 @@ h2 {
   border: 1px solid #555;
   outline: none;
   background: none;
-  padding: 14px;
-  border-radius: 10px;
+  padding: 1.4rem;
+  border-radius: 1rem;
   font-size: 1.2em;
 }
 
 .inputbox {
   position: relative;
-  width: 400px;
-  height: 50px;
-  margin-bottom: 25px;
+  width: 40rem;
+  height: 5rem;
+  margin-bottom: 2.5rem;
 }
 
 .inputbox:first-child {
@@ -137,8 +127,8 @@ h2 {
 
 .inputbox span {
   position: absolute;
-  top: 14px;
-  left: 20px;
+  top: 1.4rem;
+  left: 2rem;
   font-size: 1.4rem;
   transition: 0.6s;
   font-family: sans-serif;
@@ -148,4 +138,16 @@ h2 {
 .inputbox input:valid ~ span {
   transform: translateX(-13px) translateY(-35px);
   font-size: 1.4rem;
+}
+
+@media (max-width: 48em) {
+  .main-wrapper {
+    margin: 4.8rem;
+    max-width: 25%;
+  }
+
+  .unordered-list {
+    gap: 3.2rem;
+    padding: 1.2rem;
+  }
 }
