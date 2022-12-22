@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import _ from 'lodash';
 import './style.css';
 import { postScore } from './modules/leaders.js';
 import UI from './modules/UI.js';
