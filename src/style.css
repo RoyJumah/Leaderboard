@@ -12,7 +12,10 @@ body {
   font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: #000;
+  background-image: url(../src/assets/images/background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .display-flex {
@@ -31,7 +34,7 @@ body {
 .text-box {
   max-width: 55rem;
   height: 45rem;
-  border: 2px solid #333;
+  border: 2px solid #332b00;
   margin-top: 2.4rem;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0 6px 12px -2px,
@@ -80,29 +83,12 @@ h2 {
   font-size: 1.8rem;
 }
 
-.buttons,
-.buttons:link,
-.buttons:visited {
-  padding: 0.8rem 1.8rem;
-  background-color: #fff;
-  border: 1px solid #333;
-  border-radius: 6px;
-  transition: 0.25s;
-}
-
-.buttons:hover,
-.buttons:focus {
-  box-shadow: inset -3.5em 0 0 0 #555, inset 3.5em 0 0 0 #555;
-  color: #fff;
-  transform: translateY(-0.25em);
-}
-
 .inputbox input {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  border: 1px solid #555;
+  border: 1px solid #000;
   outline: none;
   background: none;
   padding: 1.4rem;
@@ -150,4 +136,51 @@ h2 {
     gap: 3.2rem;
     padding: 1.2rem;
   }
+}
+
+.btn-16 {
+  background: #000;
+  color: #000;
+  z-index: 1;
+}
+
+.btn-16::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #806c00;
+  transition: all 0.3s ease;
+}
+
+.btn-16:hover {
+  color: #fff;
+}
+
+.btn-16:hover::after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-16:active {
+  top: 2px;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #332b00;
+  font-family: inherit;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
 }
