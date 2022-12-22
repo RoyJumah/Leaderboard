@@ -32,8 +32,9 @@ body {
   height: 45rem;
   border: 2px solid #333;
   margin-top: 2.4rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
 }
 
 .unordered-list {
@@ -118,9 +119,18 @@ h2 {
   border-radius: 10px;
   font-size: 1.2em;
 }
+
+.inputbox {
+  position: relative;
+  width: 400px;
+  height: 50px;
+  margin-bottom: 25px;
+}
+
 .inputbox:first-child {
   margin-top: 25px;
 }
+
 .inputbox:last-child {
   margin-bottom: 0;
 }
@@ -138,10 +148,4 @@ h2 {
 .inputbox input:valid ~ span {
   transform: translateX(-13px) translateY(-35px);
   font-size: 1.4rem;
-}
-.inputbox {
-  position: relative;
-  width: 400px;
-  height: 50px;
-  margin-bottom: 25px;
 }
