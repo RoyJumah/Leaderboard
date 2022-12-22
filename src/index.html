@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="main-wrapper">
@@ -13,7 +17,7 @@
         <div id="display-leaders" class="form-position">
           <div class="display-flex">
             <p class="recent-score">Recent Scores</p>
-            <button class="refresh-btn buttons">Refresh</button>
+            <button class="refresh-btn custom-btn btn-16">Refresh</button>
           </div>
           <div id="leaderboard" class="text-box"></div>
         </div>
@@ -32,7 +36,11 @@
             <span>Your Score</span>
           </div>
 
-          <input id="addBtn" class="buttons" type="submit" value="Submit" />
+         
+            <button id ="addBtn"class="custom-btn btn-16" type="submit">Submit</button>
+           
+          </button>
+    
         </form>
       </div>
     </main>
