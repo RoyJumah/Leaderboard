@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://royjumah.github.io/Leaderboard/dist/)
+[Live Demo Link](https://royjumahleaderboard.netlify.app/)
 
 
 ## Getting Started
