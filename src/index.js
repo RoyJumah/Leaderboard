@@ -5,7 +5,7 @@ import UI from './modules/UI.js';
 const form = document.getElementById('form');
 const refreshBtn = document.querySelector('.refresh-btn');
 
-form.addEventListener('submit', event => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const user = form.name.value;

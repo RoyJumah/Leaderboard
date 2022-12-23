@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+Georgian:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -87,7 +88,6 @@ h2 {
   outline: none;
   background: none;
   padding: 1.4rem;
-
   font-size: 1.2em;
 }
 
@@ -125,15 +125,12 @@ h2 {
   .main-wrapper {
     margin: 4.8rem;
     max-width: 25%;
+    grid-template-columns: 1fr;
   }
 
   .unordered-list {
     gap: 3.2rem;
     padding: 1.2rem;
-  }
-
-  .main-wrapper {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -194,5 +191,5 @@ h2 {
 }
 
 #leaderboard ul:nth-child(even) {
-  background-color: #cccccc;
+  background-color: #ccc;
 }
