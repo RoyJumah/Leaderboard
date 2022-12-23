@@ -7,7 +7,7 @@ export default class UI {
     ul.classList.add('unordered-list');
 
     ul.innerHTML = `
-       <p class ="leader-name"><ion-icon name="person"></ion-icon>${leader.user}  :</p>
+       <p class ="leader-name">${leader.user}:</p>
       <p class ="leader-score">${leader.score}</p>
     
       `;
@@ -18,7 +18,7 @@ export default class UI {
   static async displayLeader() {
     const leaders = await getScores();
 
-    leaders.result.forEach((leader) => {
+    leaders.result.forEach(leader => {
       UI.addLeader(leader);
     });
   }

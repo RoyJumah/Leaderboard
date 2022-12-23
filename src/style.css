@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+Georgian:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -9,49 +8,48 @@ html {
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Georgia', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #000;
-  background-image: url(../src/assets/images/background-image.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .display-flex {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .main-wrapper {
-  padding: 2.4rem;
+  padding: 2.4rem 9.6rem;
+  max-width: 140rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 9.6rem;
   margin: 0 auto;
-  max-width: 40%;
-  display: flex;
-  gap: 4.8rem;
 }
 
 .text-box {
-  max-width: 55rem;
-  height: 45rem;
-  border: 2px solid #332b00;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #332b00;
   margin-top: 2.4rem;
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0 6px 12px -2px,
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
 }
 
 .unordered-list {
+  padding-bottom: 0;
+  margin-bottom: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4.8rem;
+  justify-content: flex-start;
+  gap: 1.4rem;
 }
 
 .recent-score,
 h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 #form {
@@ -65,12 +63,9 @@ h2 {
 }
 
 .main-header {
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
-}
-
-.refresh-btn {
-  margin-left: 2.4rem;
+  text-align: center;
 }
 
 .leader-name {
@@ -92,7 +87,7 @@ h2 {
   outline: none;
   background: none;
   padding: 1.4rem;
-  border-radius: 1rem;
+
   font-size: 1.2em;
 }
 
@@ -117,7 +112,7 @@ h2 {
   left: 2rem;
   font-size: 1.4rem;
   transition: 0.6s;
-  font-family: sans-serif;
+  font-family: inherit;
 }
 
 .inputbox input:focus ~ span,
@@ -136,12 +131,17 @@ h2 {
     gap: 3.2rem;
     padding: 1.2rem;
   }
+
+  .main-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 .btn-16 {
   background: #000;
   color: #000;
   z-index: 1;
+  box-shadow: 10px 5px 5px #000;
 }
 
 .btn-16::after {
@@ -153,7 +153,7 @@ h2 {
   left: 0;
   direction: rtl;
   z-index: -1;
-  background: #806c00;
+  background: #000;
   transition: all 0.3s ease;
 }
 
@@ -183,4 +183,16 @@ h2 {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
+}
+
+#leaderboard ul {
+  margin: 0;
+}
+
+#leaderboard ul:nth-child(odd) {
+  background-color: #fff;
+}
+
+#leaderboard ul:nth-child(even) {
+  background-color: #cccccc;
 }
