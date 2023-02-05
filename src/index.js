@@ -22,5 +22,7 @@ form.addEventListener('submit', (event) => {
 });
 
 refreshBtn.addEventListener('click', () => {
+  const leaderRank = document.getElementById('leaderboard');
+  leaderRank.innerHTML = '';
   UI.displayLeader();
 });

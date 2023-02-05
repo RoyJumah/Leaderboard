@@ -17,9 +17,13 @@ export default class UI {
 
   static async displayLeader() {
     const leaders = await getScores();
+    let lastRenderedData;
 
-    leaders.result.forEach((leader) => {
-      UI.addLeader(leader);
-    });
+    if (JSON.stringify(leaders) !== JSON.stringify(lastRenderedData)) {
+      lastRenderedData = leaders;
+      leaders.result.forEach((leader) => {
+        UI.addLeader(leader);
+      });
+    }
   }
 }
