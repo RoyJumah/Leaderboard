@@ -3,7 +3,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Leaderboard</b></h3>
+  <h2><b>Leaderboard</b></h2>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -30,7 +30,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-**[Leaderboard]** This is a project built with JS and Leaderboard External API Service that displays different scores submitted by different players
+# 📖 [Leaderboard] <a name="about-project"></a>
+
+**[Learderboard]** This is a project built with JS and Leaderboard External API Service that displays different scores submitted by different players
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -45,16 +47,14 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Input scores **
-- **Displaying scores in the UI **
+- **Input scores**
+- **Displaying scores in the UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://royjumahleaderboard.netlify.app/)
 
@@ -63,8 +63,6 @@
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-.
 
 ### Prerequisites
 
@@ -105,8 +103,6 @@ To run tests, run the following command:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Roy Jumah**
 
