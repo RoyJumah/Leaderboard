@@ -13,6 +13,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #000;
+  background-color: #228be6;
 }
 
 .display-flex {
@@ -45,6 +46,7 @@ body {
   display: flex;
   justify-content: flex-start;
   gap: 1.4rem;
+  align-items: center;
 }
 
 .recent-score,
@@ -192,4 +194,12 @@ h2 {
 
 #leaderboard ul:nth-child(even) {
   background-color: #ccc;
+}
+
+.leader-avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
 }
