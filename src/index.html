@@ -15,36 +15,42 @@
   <body>
     <h2 class="main-header">Leaderboard</h2>
     <main class="main-wrapper">
+      <div class="container-1">
       <header>
         <div id="display-leaders" class="form-position">
           <div class="display-flex">
             <p class="recent-score">Recent Scores</p>
-            <button class="refresh-btn custom-btn btn-16">Refresh</button>
+            <button class="refresh-btn">Refresh</button>
           </div>
           <div id="leaderboard" class="text-box"></div>
         </div>
       </header>
+      </div>
+      <div class="container-2">
       <div class="form-wrapper">
         <h2>Add Your Scores</h2>
 
         <form id="form">
           <div class="inputbox">
-            <input type="text" id="name" name="name" required />
-            <span>Your Name</span>
+            <input type="text" id="name" name="name" required placeholder="Your Name" />
+            
           </div>
 
           <div class="inputbox">
-            <input type="number" id="score" name="score" required />
-            <span>Your Score</span>
+            <input type="number" id="score" name="score" required placeholder="Your Score"/>
+        
           </div>
 
          
-            <button id ="addBtn"class="custom-btn btn-16" type="submit">Submit</button>
+            <button id ="addBtn" type="submit">Submit</button>
            
           </button>
 
         </form>
       </div>
+    </div>
+  
     </main>
+  
   </body>
 </html>

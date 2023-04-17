@@ -1,6 +1,6 @@
 const GAME_ID = '5tZeFvL8uot4ml3hfz7h';
 
-const postScore = async newscore => {
+const postScore = async (newscore) => {
   const scoreResponse = await fetch(
     `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${GAME_ID}/scores/`,
     {
@@ -9,7 +9,7 @@ const postScore = async newscore => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(newscore),
-    }
+    },
   );
   const scoreData = await scoreResponse.json();
 
@@ -18,7 +18,7 @@ const postScore = async newscore => {
 
 const getScores = async () => {
   const response = await fetch(
-    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${GAME_ID}/scores/ `
+    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${GAME_ID}/scores/ `,
   );
 
   const data = await response.json();
