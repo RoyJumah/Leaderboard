@@ -16,18 +16,20 @@ body {
   background: url('./assets/images/background_image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.display-flex,
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .display-flex {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .main-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin: 5% 10%;
   gap: 30px;
 }
@@ -48,9 +50,14 @@ input[type='number']::-webkit-outer-spin-button {
   height: auto;
   border: 1px solid #332b00;
   margin-top: 2.4rem;
-  box-shadow: 0 1px 2px 0 rgba(0, 255, 255, 0.7),
-    1px 2px 4px 0 rgba(0, 255, 255, 0.7), 2px 4px 8px 0 rgba(0, 255, 255, 0.7),
+  box-shadow:
+    0 1px 2px 0 rgba(0, 255, 255, 0.7),
+    1px 2px 4px 0 rgba(0, 255, 255, 0.7),
+    2px 4px 8px 0 rgba(0, 255, 255, 0.7),
     2px 4px 16px 0 rgba(0, 255, 255, 0.7);
+  min-height: 400px;
+  background-color: #ccc;
+  overflow-y: scroll;
 }
 
 .unordered-list {
@@ -67,8 +74,12 @@ input[type='number']::-webkit-outer-spin-button {
   margin: 5px;
 }
 
+.form_header {
+  margin-bottom: 55px;
+}
+
 .recent-score,
-h2 {
+.form_header {
   color: rgb(255, 251, 251);
   font-size: 2.4rem;
   text-shadow: rgb(243, 0, 231) 5px 0 10px;
@@ -92,8 +103,14 @@ h2 {
 .leader-rank {
   color: rgb(169, 83, 240);
   filter: brightness(110%);
-  text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px #fff, 0 0 15px #fff,
-    0 0 20px #4eadec, 0 0 35px #4eadec, 0 0 40px #4eadec, 0 0 50px #4eadec,
+  text-shadow:
+    0 0 5px rgb(255, 255, 255),
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #4eadec,
+    0 0 35px #4eadec,
+    0 0 40px #4eadec,
+    0 0 50px #4eadec,
     0 0 75px #4eadec;
   animation: pink 1.5s ease-in-out infinite alternate;
   margin: 5%;
@@ -106,7 +123,8 @@ input {
   padding: 3%;
   border-radius: 10px;
   font-size: 2rem;
-  box-shadow: 0 1px 2px 0 rgba(235, 243, 243, 0.7),
+  box-shadow:
+    0 1px 2px 0 rgba(235, 243, 243, 0.7),
     1px 2px 4px 0 rgba(235, 243, 243, 0.7),
     2px 4px 8px 0 rgba(235, 243, 243, 0.7),
     2px 4px 16px 0 rgba(235, 243, 243, 0.7);
@@ -177,6 +195,15 @@ button {
 
   #addBtn {
     align-self: center;
+    margin-bottom: 15px;
+  }
+
+  .form_header {
+    margin-bottom: 25px;
+  }
+
+  .text-box {
+    min-height: 300px;
   }
 
   .main-wrapper {
@@ -186,14 +213,15 @@ button {
   }
 
   .recent-score,
-  h2,
+  .form_header,
   input::placeholder {
     font-size: 2rem;
   }
 
   .container-1,
   .container-2 {
-    width: 90%;
+    width: auto;
+    padding: 5%;
   }
 
   .player-info {

@@ -1,4 +1,4 @@
-const GAME_ID = '5tZeFvL8uot4ml3hfz7h';
+const GAME_ID = 'U5YOfdMswCx5o4EbSzZk';
 
 const postScore = async (newscore) => {
   const scoreResponse = await fetch(
