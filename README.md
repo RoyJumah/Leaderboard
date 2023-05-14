@@ -15,10 +15,9 @@
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Install](#install)
     - [Usage](#usage)
-    - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -32,6 +31,14 @@
 
 **[Learderboard]** This is a project built with JS and Leaderboard External API Service that displays different scores submitted by different players
 
+## Preview
+<table style="border-collapse: collapse; border: 0;">
+  <tr>
+    <td><img src="https://github.com/RoyJumah/Leaderboard/assets/61903079/58a2871c-6765-432b-9cc6-281796435ffd"></td>
+    <td><img src="https://github.com/RoyJumah/Leaderboard/assets/61903079/0cb23ac2-6aec-4229-a07c-d37ccc621053"></td>
+  </tr>
+  </table>
+  
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -62,14 +69,6 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-### Prerequisites
-
-In order to run this project you need:
-
-```sh
- $ sudo apt install node
-```
-
 ### Setup
 
 Clone this repository to your desired folder:
@@ -79,21 +78,21 @@ Clone this repository to your desired folder:
  $ git clone https://github.com/RoyJumah/Leaderboard.git
 ```
 
+### Install
+Install this project with:
+
+```sh
+  $ cd my-project
+  $ npm install
+```
+
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
-  $ npm install
-  $ npm run start
-```
-
-### Run tests
-
-To run tests, run the following command:
-
-```sh
-  $ npm run test
+  $ npm run build
+  $ npm start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
