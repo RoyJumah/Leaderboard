@@ -34,7 +34,7 @@
 ## Preview
 <table style="border-collapse: collapse; border: 0;">
   <tr>
-    <td><img src="https://github.com/RoyJumah/Leaderboard/assets/61903079/f108bf87-eb9f-4abc-9425-0cbb46e7b071"></td>
+    <td><img src="https://github.com/RoyJumah/Leaderboard/assets/61903079/5004b322-73d1-4ea1-836d-ae9565d0c3fc"></td>
     <td><img src="https://github.com/RoyJumah/Leaderboard/assets/61903079/0cb23ac2-6aec-4229-a07c-d37ccc621053"></td>
   </tr>
   </table>
