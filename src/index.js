@@ -5,7 +5,7 @@ import UI from './modules/UI.js';
 const form = document.getElementById('form');
 const refreshBtn = document.querySelector('.refresh-btn');
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', event => {
   event.preventDefault();
 
   const user = form.name.value;
@@ -26,3 +26,16 @@ refreshBtn.addEventListener('click', () => {
   leaderRank.innerHTML = '';
   UI.displayLeader();
 });
+
+//preloader
+document.onreadystatechange = function () {
+  if (document.readyState !== 'complete') {
+    document.querySelector('body').style.visibility = 'hidden';
+    document.querySelector('#preloader').style.visibility = 'visible';
+  } else {
+    setTimeout(() => {
+      document.querySelector('#preloader').style.display = 'none';
+    }, 3500);
+    document.querySelector('body').style.visibility = 'visible';
+  }
+};

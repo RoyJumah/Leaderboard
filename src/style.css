@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+Georgian:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,16 +9,76 @@ html {
 }
 
 body {
-  font-family: 'Georgia', sans-serif;
+  font-family: 'Minecraft', sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #000;
-  background: url('./assets/images/background_image.jpg');
+  background: rgb(60, 91, 71);
+  background: linear-gradient(
+      124deg,
+      rgba(60, 91, 71, 0.6) 5%,
+      rgba(5, 17, 19, 0.65) 50%,
+      rgba(7, 150, 205, 0.5) 95%
+    ),
+    url(assets/images/background_image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
+root {
+  --display-flex: flex;
+  --jungle-green: #0e211e;
+  --hunter-green: #3c5b47;
+  --indigo-dye: #224f6e;
+  --blue: #008dc4;
+  --jazzberry-jam: #af075c;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'Minecraft', sans-serif;
+  letter-spacing: 3px;
+}
+#preloader {
+  background: rgb(0, 0, 0) url(assets/images/loading.gif) no-repeat center
+    center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.neon {
+  animation: flicker 1.5s infinite alternate;
+  color: rgb(255, 255, 255);
+}
+
+/* flickering animation */
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px rgb(170, 170, 170), 0 0 11px rgb(170, 170, 170),
+      0 0 19px rgb(170, 170, 170), 0 0 40px var(--jazzberry-jam),
+      0 0 80px var(--jazzberry-jam), 0 0 90px var(--jazzberry-jam),
+      0 0 100px #c04a85, 0 0 150px #c04a85;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
 .display-flex,
 .main-wrapper {
   display: flex;
@@ -48,16 +108,12 @@ input[type='number']::-webkit-outer-spin-button {
 .text-box {
   border-radius: 5px;
   height: auto;
-  border: 1px solid #332b00;
+  border: 4px solid #9d3199d0;
   margin-top: 2.4rem;
-  box-shadow:
-    0 1px 2px 0 rgba(0, 255, 255, 0.7),
-    1px 2px 4px 0 rgba(0, 255, 255, 0.7),
-    2px 4px 8px 0 rgba(0, 255, 255, 0.7),
-    2px 4px 16px 0 rgba(0, 255, 255, 0.7);
+
   min-height: 400px;
-  background-color: #ccc;
-  overflow-y: scroll;
+  background: #22506ec4;
+  overflow-y: hidden;
 }
 
 .unordered-list {
@@ -80,9 +136,10 @@ input[type='number']::-webkit-outer-spin-button {
 
 .recent-score,
 .form_header {
-  color: rgb(255, 251, 251);
+  color: #dfbfbf;
   font-size: 2.4rem;
-  text-shadow: rgb(243, 0, 231) 5px 0 10px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
   font-weight: bold;
 }
 
@@ -97,21 +154,12 @@ input[type='number']::-webkit-outer-spin-button {
   align-self: flex-end;
 }
 
-.main-header,
 .player-info,
 .leader-score,
 .leader-rank {
   color: rgb(169, 83, 240);
   filter: brightness(110%);
-  text-shadow:
-    0 0 5px rgb(255, 255, 255),
-    0 0 10px #fff,
-    0 0 15px #fff,
-    0 0 20px #4eadec,
-    0 0 35px #4eadec,
-    0 0 40px #4eadec,
-    0 0 50px #4eadec,
-    0 0 75px #4eadec;
+
   animation: pink 1.5s ease-in-out infinite alternate;
   margin: 5%;
   text-align: center;
@@ -123,33 +171,31 @@ input {
   padding: 3%;
   border-radius: 10px;
   font-size: 2rem;
-  box-shadow:
-    0 1px 2px 0 rgba(235, 243, 243, 0.7),
-    1px 2px 4px 0 rgba(235, 243, 243, 0.7),
-    2px 4px 8px 0 rgba(235, 243, 243, 0.7),
-    2px 4px 16px 0 rgba(235, 243, 243, 0.7);
+  background-color: inherit;
   width: 100%;
+  color: #dfbfbf;
+  border: 4px solid #9d3199cb;
+}
+input::placeholder {
+  color: #dfbfbf;
 }
 
 button {
   cursor: pointer;
   border: none;
-  color: white;
+  color: #dfbfbf;
   border-radius: 5px;
   width: 25%;
   padding: 1rem;
+  font-family: inherit;
   background: rgb(70, 125, 197);
   font-size: 2rem;
   transition: all 0.6s ease-in;
   text-shadow: rgb(233, 173, 230) 8px 0 13px;
 }
 
-#leaderboard ul:nth-child(odd) {
-  background-color: #fff;
-}
-
 #leaderboard ul:nth-child(even) {
-  background-color: #ccc;
+  background-color: #3c5b47d6;
 }
 
 .leader-rank {
@@ -181,12 +227,6 @@ button {
   body {
     margin: 0;
     height: 100vh;
-  }
-
-  .main-header {
-    font-size: 3rem;
-    padding-top: 5%;
-    margin: 0;
   }
 
   html {
