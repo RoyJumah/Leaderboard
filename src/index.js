@@ -5,7 +5,7 @@ import UI from './modules/UI.js';
 const form = document.getElementById('form');
 const refreshBtn = document.querySelector('.refresh-btn');
 
-form.addEventListener('submit', event => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const user = form.name.value;
@@ -27,8 +27,8 @@ refreshBtn.addEventListener('click', () => {
   UI.displayLeader();
 });
 
-//preloader
-document.onreadystatechange = function () {
+// preloader
+document.onreadystatechange = () => {
   if (document.readyState !== 'complete') {
     document.querySelector('body').style.visibility = 'hidden';
     document.querySelector('#preloader').style.visibility = 'visible';

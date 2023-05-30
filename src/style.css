@@ -13,7 +13,8 @@ body {
   line-height: 1;
   font-weight: 400;
   background: rgb(60, 91, 71);
-  background: linear-gradient(
+  background:
+    linear-gradient(
       124deg,
       rgba(60, 91, 71, 0.6) 5%,
       rgba(5, 17, 19, 0.65) 50%,
@@ -28,7 +29,6 @@ body {
 }
 
 :root {
-  --display-flex: flex;
   --jungle-green: #0e211e;
   --hunter-green: #3c5b47;
   --indigo-dye: #224f6e;
@@ -36,6 +36,8 @@ body {
   --jazzberry-jam: #af075c;
   --primary-color: #dfbfbf;
   --primary-pink: #9d3199d0;
+  --secondary-font: 'Poppins', sans-serif;
+  --tertiary-green: #3c5b47d6;
 }
 
 h1 {
@@ -44,15 +46,19 @@ h1 {
   font-family: 'Minecraft', sans-serif;
   letter-spacing: 3px;
 }
+
 #preloader {
   background: rgb(0, 0, 0) url(assets/images/loading.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 100;
 }
 
@@ -70,10 +76,15 @@ h1 {
   53%,
   57%,
   100% {
-    text-shadow: 0 0 4px rgb(170, 170, 170), 0 0 11px rgb(170, 170, 170),
-      0 0 19px rgb(170, 170, 170), 0 0 40px var(--jazzberry-jam),
-      0 0 80px var(--jazzberry-jam), 0 0 90px var(--jazzberry-jam),
-      0 0 100px #c04a85, 0 0 150px #c04a85;
+    text-shadow:
+      0 0 4px rgb(170, 170, 170),
+      0 0 11px rgb(170, 170, 170),
+      0 0 19px rgb(170, 170, 170),
+      0 0 40px var(--jazzberry-jam),
+      0 0 80px var(--jazzberry-jam),
+      0 0 90px var(--jazzberry-jam),
+      0 0 100px #c04a85,
+      0 0 150px #c04a85;
   }
 
   20%,
@@ -82,6 +93,7 @@ h1 {
     text-shadow: none;
   }
 }
+
 .display-flex,
 .main-wrapper {
   display: flex;
@@ -115,7 +127,7 @@ input[type='number']::-webkit-outer-spin-button {
   margin-top: 2.4rem;
   min-height: 400px;
   background: var(--primary-blue);
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .unordered-list {
@@ -147,10 +159,17 @@ button {
   color: var(--primary-color);
 }
 
+.player-info,
+.leader-score,
+.leader-rank,
+.recent-score,
+.form_header {
+  font-family: var(--secondary-font);
+}
+
 .recent-score,
 .form_header {
   font-size: 2.4rem;
-  font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
   font-weight: bold;
 }
@@ -170,8 +189,6 @@ button {
 .leader-score,
 .leader-rank {
   filter: brightness(110%);
-  font-family: 'Poppins', sans-serif;
-  margin: 5%;
   text-align: center;
   font-size: 4rem;
 }
@@ -183,7 +200,6 @@ input {
   font-size: 2rem;
   background-color: inherit;
   width: 100%;
-
   border: 4px solid var(--primary-pink);
 }
 
@@ -201,7 +217,7 @@ button {
 }
 
 #leaderboard ul:nth-child(even) {
-  background-color: #3c5b47d6;
+  background-color: var(--tertiary-green);
 }
 
 .leader-rank {
