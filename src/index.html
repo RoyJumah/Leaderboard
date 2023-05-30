@@ -9,52 +9,60 @@
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-kbX9N7EJq3OoVfr23U6kdN/6xIbndF1xdz5gW8ptv5XjP4M+V7wpCwW8gjKOh4ip" crossorigin="anonymous">
-    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
-                
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha384-kbX9N7EJq3OoVfr23U6kdN/6xIbndF1xdz5gW8ptv5XjP4M+V7wpCwW8gjKOh4ip"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet" />
   </head>
   <body>
     <div id="preloader"></div>
-<header>
-  <h1 class="neon">Leaderboard</h1>
-</header>
+    <header>
+      <h1 class="neon">LeaderBoard</h1>
+    </header>
     <main class="main-wrapper">
       <div class="container-1">
-      <header>
-        <div id="display-leaders" class="form-position">
-          <div class="display-flex">
-            <p class="recent-score">Recent Scores</p>
-            <button class="refresh-btn">Refresh</button>
+        <header>
+          <div id="display-leaders" class="form-position">
+            <div class="display-flex">
+              <p class="recent-score">Recent Scores</p>
+              <button class="refresh-btn">Refresh</button>
+            </div>
+            <div id="leaderboard" class="text-box"></div>
           </div>
-          <div id="leaderboard" class="text-box"></div>
-        </div>
-      </header>
+        </header>
       </div>
       <div class="container-2">
-      <div class="form-wrapper">
-        <h2 class="form_header">Add Your Scores</h2>
+        <div class="form-wrapper">
+          <h2 class="form_header">Add Your Scores</h2>
 
-        <form id="form">
-          <div class="inputbox">
-            <input type="text" id="name" name="name" required placeholder="Your Name" />
-            
-          </div>
+          <form id="form">
+            <div class="inputbox">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Your Name"
+              />
+            </div>
 
-          <div class="inputbox">
-            <input type="number" id="score" name="score" required placeholder="Your Score"/>
-        
-          </div>
+            <div class="inputbox">
+              <input
+                type="number"
+                id="score"
+                name="score"
+                required
+                placeholder="Your Score"
+              />
+            </div>
 
-         
-            <button id ="addBtn" type="submit">Submit</button>
-           
-          </button>
-
-        </form>
+            <button id="addBtn" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
-    </div>
-  
     </main>
-  
   </body>
 </html>

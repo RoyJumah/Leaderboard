@@ -25,16 +25,17 @@ body {
   background-attachment: fixed;
   background-position: center;
   height: 100vh;
-  overflow: hidden;
 }
 
-root {
+:root {
   --display-flex: flex;
   --jungle-green: #0e211e;
   --hunter-green: #3c5b47;
   --indigo-dye: #224f6e;
-  --blue: #008dc4;
+  --primary-blue: #22506ec4;
   --jazzberry-jam: #af075c;
+  --primary-color: #dfbfbf;
+  --primary-pink: #9d3199d0;
 }
 
 h1 {
@@ -44,8 +45,10 @@ h1 {
   letter-spacing: 3px;
 }
 #preloader {
-  background: rgb(0, 0, 0) url(assets/images/loading.gif) no-repeat center
-    center;
+  background: rgb(0, 0, 0) url(assets/images/loading.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -108,11 +111,10 @@ input[type='number']::-webkit-outer-spin-button {
 .text-box {
   border-radius: 5px;
   height: auto;
-  border: 4px solid #9d3199d0;
+  border: 4px solid var(--primary-pink);
   margin-top: 2.4rem;
-
   min-height: 400px;
-  background: #22506ec4;
+  background: var(--primary-blue);
   overflow-y: hidden;
 }
 
@@ -135,8 +137,18 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .recent-score,
+.form_header,
+.player-info,
+.leader-score,
+.leader-rank,
+input,
+input::placeholder,
+button {
+  color: var(--primary-color);
+}
+
+.recent-score,
 .form_header {
-  color: #dfbfbf;
   font-size: 2.4rem;
   font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
@@ -157,10 +169,8 @@ input[type='number']::-webkit-outer-spin-button {
 .player-info,
 .leader-score,
 .leader-rank {
-  color: rgb(169, 83, 240);
   filter: brightness(110%);
-
-  animation: pink 1.5s ease-in-out infinite alternate;
+  font-family: 'Poppins', sans-serif;
   margin: 5%;
   text-align: center;
   font-size: 4rem;
@@ -173,17 +183,13 @@ input {
   font-size: 2rem;
   background-color: inherit;
   width: 100%;
-  color: #dfbfbf;
-  border: 4px solid #9d3199cb;
-}
-input::placeholder {
-  color: #dfbfbf;
+
+  border: 4px solid var(--primary-pink);
 }
 
 button {
   cursor: pointer;
   border: none;
-  color: #dfbfbf;
   border-radius: 5px;
   width: 25%;
   padding: 1rem;
