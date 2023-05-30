@@ -29,13 +29,13 @@
 
 # 📖 [Leaderboard] <a name="about-project"></a>
 
-**[Learderboard]** This is a project built with JS and Leaderboard External API Service that displays different scores submitted by different players
+**[Learderboard]** is a project built with JS and Leaderboard External API Service that displays different scores submitted by different players
 
 ## Preview
 <table style="border-collapse: collapse; border: 0;">
   <tr>
-    <td><img src="https://github.com/RoyJumah/Leaderboard/assets/61903079/5004b322-73d1-4ea1-836d-ae9565d0c3fc"></td>
-    <td><img src="https://github.com/RoyJumah/Leaderboard/assets/61903079/0cb23ac2-6aec-4229-a07c-d37ccc621053"></td>
+    <td><img src="https://github.com/RoyJumah/Leaderboard/assets/61903079/56490b5f-416b-4c8c-bcbf-0b9e3aa44d19"></td>
+    <td><img src="https://github.com/RoyJumah/Leaderboard/assets/61903079/8213f079-c64a-4b2c-9919-d1e9cc98de5d"></td>
   </tr>
   </table>
   
@@ -44,8 +44,9 @@
 ### Tech Stack <a name="tech-stack"></a>
 
   <ul>
-    <li><a href="https://reactjs.org/">JavaScript</a></li>
-    <li><a href="https://redux.js.org/">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">HTML5</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+    <li><a href="https://www.w3schools.com/css/">CSS3</a></li>
   </ul>
 
 <!-- Features -->
